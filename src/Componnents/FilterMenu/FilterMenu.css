@@ -1,0 +1,38 @@
+.food-filter-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+  flex-direction: row-reverse;
+}
+
+.food-option-wrapper {
+  background-color: #373737;
+  border-radius: 80px;
+  padding: 0px 15px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.food-option {
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+
+.food-option button {
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: none;
+
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.food-option button:hover {
+  background: linear-gradient(to right, #ff5733, #f39e60);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.food-option button:active {
+  transform: scale(0.95);
+}
