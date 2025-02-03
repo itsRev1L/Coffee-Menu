@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("./assets/fonts/Vazirmatn-Black.woff2") format("woff2"),
+    url("./assets/fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Vazirmatn-Black", sans-serif;
+}
