@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./Componnents/Header/Header.jsx";
 import FilterMenu from "./Componnents/FilterMenu/FilterMenu.jsx";
 import MenuList from "./Componnents/MenuList/MenuList.jsx";
@@ -13,13 +13,14 @@ function App() {
     { id: 4, name: "پاستا" },
     { id: 5, name: "سوشی" },
     { id: 6, name: "دسر" },
+    { id: 7, name: "kids" },
   ];
 
   const menuItems = [
     {
       id: 1,
       name: "پیتزا",
-      description: "پیتزای خوشمزه با مواد تازه",
+      description: "پیتزای خوشمزه",
       price: "۳۲۰,۰۰۰ تومان",
       category: "پیتزا",
       image:
@@ -28,7 +29,7 @@ function App() {
     {
       id: 2,
       name: "برگر",
-      description: "برگر ذغالی با سس مخصوص",
+      description: "برگر ذغالی",
       price: "۲۸۰,۰۰۰ تومان",
       category: "برگر",
       image: "/images/burger.jpg",
@@ -36,7 +37,7 @@ function App() {
     {
       id: 3,
       name: "پاستا",
-      description: "پاستای ایتالیایی با پنیر پارمزان",
+      description: "پاستای ایتالیایی",
       price: "۲۵۰,۰۰۰ تومان",
       category: "پاستا",
       image: "/images/pasta.jpg",
@@ -51,8 +52,8 @@ function App() {
     },
     {
       id: 5,
-      name: "پیتزا نیمه مخصوص ",
-      description: "پیتزای با سوسیس اضافه،گوشت هم داره",
+      name: "پیتزا نیمه مخصوص",
+      description: "پیتزا با سوسیس",
       price: "۳۵۰,۰۰۰ تومان",
       category: "پیتزا",
       image:
@@ -60,20 +61,50 @@ function App() {
     },
     {
       id: 6,
-      name: "دونر پیتزا ",
-      description: "پیتزای با دونر اضافه،گوشت هم داره",
-      price: "5۵۰,۰۰۰ تومان",
-      category: "پیتزا",
+      name: "Nader",
+      description:
+        "20 Sale, az bandar, Koliye hash kar mikone, Ciggar ham nemikeshe",
+      price: "60$",
+      category: "kids",
+      image: "",
+    },
+    {
+      id: 7,
+      name: "soroosh",
+      description:
+        "20 sale, faghat mano nakeshide, shayad ghalb esh khoob bashe, shiraz ",
+      price: "5$",
+      category: "kids",
+      image: "",
+    },
+    {
+      id: 8,
+      name: "Esi",
+      description: "22 No life, no job",
+      price: "10$",
+      category: "kids",
       image: "",
     },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState("همه");
 
-  const filteredItems =
-    selectedCategory === "همه"
-      ? menuItems
-      : menuItems.filter((item) => item.category === selectedCategory);
+  const sortedMenuItems = [...menuItems].sort((a, b) =>
+    a.category.localeCompare(b.category)
+  );
+
+  const scrollToCategory = (category) => {
+    if (category === "همه") return;
+
+    const categoryElement = document.getElementById(`category-${category}`);
+    if (categoryElement) {
+      categoryElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  useEffect(() => {
+    scrollToCategory(selectedCategory);
+  }, [selectedCategory]);
 
   return (
     <>
@@ -83,7 +114,7 @@ function App() {
         setSelectedCategory={setSelectedCategory}
         selectedCategory={selectedCategory}
       />
-      <MenuList items={filteredItems} />
+      <MenuList items={sortedMenuItems} />
     </>
   );
 }

@@ -12,7 +12,7 @@
 }
 
 .menu-item .d-flex {
-  gap: 15px; /* فاصله بین متن و عکس */
+  gap: 15px;
 }
 
 .menu-text .title {

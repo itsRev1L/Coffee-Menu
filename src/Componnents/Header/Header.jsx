@@ -7,8 +7,8 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 const Header = () => {
   return (
     <>
-      <Container className="pb-5 bg-custom text-center">
-        <Row className="pt-3">
+      <Container className="pb-3 bg-custom text-center">
+        <Row className="pt-1">
           <Col xs="12" sm="12" className="d-flex justify-content-around">
             <AccountCircleOutlinedIcon /> <SearchOutlinedIcon />
           </Col>

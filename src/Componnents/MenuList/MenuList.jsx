@@ -6,8 +6,14 @@ const MenuList = ({ items }) => {
   return (
     <Container>
       <Row className="rtl">
-        {items.map((item) => (
+        {items.map((item, index) => (
           <Col key={item.id} md={6} xs={12}>
+            {index === 0 || items[index - 1].category !== item.category ? (
+              <h2 id={`category-${item.category}`} className="category-header">
+                {item.category}
+              </h2>
+            ) : null}
+
             <Card className="menu-item">
               <Card.Body className="d-flex justify-content-between align-items-center">
                 <div className="menu-text">
