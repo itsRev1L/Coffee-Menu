@@ -12,7 +12,6 @@ function App() {
     { id: 3, name: "پاستا" },
     { id: 4, name: "سوشی" },
     { id: 5, name: "دسر" },
-    { id: 6, name: "kids" },
   ];
 
   const menuItems = [
@@ -23,7 +22,7 @@ function App() {
       price: "۳۲۰,۰۰۰ تومان",
       category: "پیتزا",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c7/Spinach_pizza.jpg",
     },
     {
       id: 2,
@@ -31,7 +30,8 @@ function App() {
       description: "برگر ذغالی",
       price: "۲۸۰,۰۰۰ تومان",
       category: "برگر",
-      image: "/images/burger.jpg",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/4/47/Hamburger_%28black_bg%29.jpg",
     },
     {
       id: 3,
@@ -39,7 +39,8 @@ function App() {
       description: "پاستای ایتالیایی",
       price: "۲۵۰,۰۰۰ تومان",
       category: "پاستا",
-      image: "/images/pasta.jpg",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/f/fe/A_better_homemade_pasta.jpg",
     },
     {
       id: 4,
@@ -47,7 +48,8 @@ function App() {
       description: "سوشی دریایی تازه",
       price: "۴۵۰,۰۰۰ تومان",
       category: "سوشی",
-      image: "/images/sushi.jpg",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/800px-Sushi_platter.jpg",
     },
     {
       id: 5,
@@ -60,29 +62,30 @@ function App() {
     },
     {
       id: 6,
-      name: "Nader",
-      description:
-        "20 Sale, az bandar, Koliye hash kar mikone, Ciggar ham nemikeshe",
-      price: "60$",
-      category: "kids",
-      image: "",
+      name: "پیتزا مارگاریتا",
+      description: "پیتزای ایتالیایی با پنیر موزارلا و ریحان تازه",
+      price: "۳۲۰,۰۰۰ تومان",
+      category: "پیتزا",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
     },
     {
       id: 7,
-      name: "soroosh",
-      description:
-        "20 sale, faghat mano nakeshide, shayad ghalb esh khoob bashe, shiraz ",
-      price: "5$",
-      category: "kids",
-      image: "",
+      name: "برگر کلاسیک",
+      description: "برگر گوشت گریل شده با پنیر چدار و سس مخصوص",
+      price: "۲۸۰,۰۰۰ تومان",
+      category: "برگر",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/4/47/Hamburger_%28black_bg%29.jpg",
     },
     {
       id: 8,
-      name: "Esi",
-      description: "22 No life, no job",
-      price: "10$",
-      category: "kids",
-      image: "",
+      name: "سوشی رول سالمون",
+      description: "سوشی رول با ماهی سالمون، برنج و جلبک دریایی",
+      price: "۴۵۰,۰۰۰ تومان",
+      category: "سوشی",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/800px-Sushi_platter.jpg",
     },
   ];
 
