@@ -9,3 +9,8 @@
 body {
   font-family: "Vazirmatn-Black", sans-serif;
 }
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
