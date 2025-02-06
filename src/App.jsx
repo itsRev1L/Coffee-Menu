@@ -7,13 +7,12 @@ import "./App.css";
 
 function App() {
   const foodData = [
-    { id: 1, name: "همه" },
-    { id: 2, name: "پیتزا" },
-    { id: 3, name: "برگر" },
-    { id: 4, name: "پاستا" },
-    { id: 5, name: "سوشی" },
-    { id: 6, name: "دسر" },
-    { id: 7, name: "kids" },
+    { id: 1, name: "پیتزا" },
+    { id: 2, name: "برگر" },
+    { id: 3, name: "پاستا" },
+    { id: 4, name: "سوشی" },
+    { id: 5, name: "دسر" },
+    { id: 6, name: "kids" },
   ];
 
   const menuItems = [
