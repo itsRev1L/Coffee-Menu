@@ -1,0 +1,11 @@
+.qa-bg-custom {
+  background: linear-gradient(to right, #ff5733, #f39e60);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.txt {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+}
