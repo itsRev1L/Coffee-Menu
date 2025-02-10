@@ -7,7 +7,7 @@ const MenuList = ({ items }) => {
     <Container>
       <Row className="rtl">
         {items.map((item, index) => (
-          <Col key={item.id} md={6} xs={12}>
+          <Col key={item.id} md={12} xs={12}>
             {index === 0 || items[index - 1].category !== item.category ? (
               <h2 id={`category-${item.category}`} className="category-header">
                 {item.category}

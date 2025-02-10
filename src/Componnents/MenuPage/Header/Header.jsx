@@ -7,7 +7,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <>
-      <Container className="pb-3 bg-custom text-center">
+      <Container fluid className="pb-3 bg-custom text-center">
         {/* <Row className="pt-1">
           <Col xs="12" sm="12" className="d-flex justify-content-around">
             <AccountCircleOutlinedIcon /> <SearchOutlinedIcon />
