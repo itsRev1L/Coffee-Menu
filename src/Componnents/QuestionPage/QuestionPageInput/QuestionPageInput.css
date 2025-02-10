@@ -1,0 +1,47 @@
+.answer-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.answer-card {
+  background: rgb(48, 48, 48);
+  padding: 8px 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.answer-input {
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+  width: 250px;
+  text-align: right;
+}
+
+.answer-input::placeholder {
+  color: transparent;
+  background: linear-gradient(to right, #ff5733, #ffcc33);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.submit-button {
+  background: linear-gradient(to right, #ff5733, #ffcc33);
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  color: white;
+}
