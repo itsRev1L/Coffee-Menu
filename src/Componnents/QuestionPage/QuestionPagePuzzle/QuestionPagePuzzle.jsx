@@ -1,26 +1,30 @@
+/* eslint-disable react/prop-types */
+
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import "./QuestionPagePuzzle.css";
 
-const QuestionPagePuzzle = () => {
+const QuestionPagePuzzle = ({ question, image, hint, score }) => {
   return (
     <Container className="mt-2 rtl">
       <Row className="justify-content-center">
         <Col xs={12} sm={12} className="mb-2">
           <div className="question-card">
-            <span></span>
+            <span>
+              {question} ({score} امتیاز)
+            </span>
           </div>
         </Col>
 
         <Col xs={12} sm={12} className="mb-2">
           <div className="image-card">
-            <span></span>
+            <img src={image} alt="سوال" className="question-image" />
           </div>
         </Col>
 
         <Col xs={12} sm={12}>
           <div className="guide-card">
-            <span></span>
+            <span>{hint}</span>
           </div>
         </Col>
       </Row>
