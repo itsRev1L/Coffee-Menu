@@ -1,8 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import MenuPage from "./Pages/MenuPage";
 import QuestionPage from "./Pages/QuestionPage";
+
 function App() {
   return (
     <>
