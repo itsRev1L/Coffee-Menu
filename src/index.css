@@ -5,10 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
-
-body {
-  font-family: "Vazirmatn-Black", sans-serif;
+* {
+  font-family: "vazir", sans-serif;
 }
+
 body,
 html {
   padding: 0;

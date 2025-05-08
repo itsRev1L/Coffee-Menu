@@ -22,7 +22,11 @@ const FilterMenu = ({ foodData, setSelectedCategory, selectedCategory }) => {
   }, []);
 
   return (
-    <Container ref={menuRef} className={isSticky ? "sticky-menu" : ""}>
+    <Container
+      ref={menuRef}
+      className={isSticky ? "sticky-menu" : ""}
+      style={{ paddingBottom: "20px" }}
+    >
       <Row>
         <Col>
           <div className="food-option-wrapper">
