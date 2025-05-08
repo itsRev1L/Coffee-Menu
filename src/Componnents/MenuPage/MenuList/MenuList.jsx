@@ -4,7 +4,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 const MenuList = ({ items }) => {
   return (
-    <Container>
+    <Container style={{ paddingBottom: "90px" }}>
       <Row className="rtl">
         {items.map((item, index) => (
           <Col key={item.id} md={12} xs={12}>

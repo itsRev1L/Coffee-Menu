@@ -10,7 +10,7 @@ const Footer = () => {
 
   const activepath = location.pathname;
   return (
-    <Container fluid className="footer-css text-center">
+    <Container fluid className="footer-css text-center ">
       <Row
         className="pt-2 d-flex justify-content-evenly align-items-center"
         xs={12}
@@ -30,14 +30,14 @@ const Footer = () => {
         </Col>
         <Col
           xs={3}
-          className={activepath === "/QuestionPage" ? "footer-active" : ""}
+          className={activepath === "/Quiz" ? "footer-active" : ""}
           onClick={() => {
-            navigate("/QuestionPage");
+            navigate("/Quiz");
           }}
         >
           <Shapes
             size={30}
-            color={activepath === "/QuestionPage" ? "#ff5733" : "white"}
+            color={activepath === "/Quiz" ? "#ff5733" : "white"}
           />
           <p>کوییز</p>
         </Col>

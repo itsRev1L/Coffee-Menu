@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MenuPage />} />
-          <Route path="/QuestionPage" element={<QuestionPage />} />
+          <Route path="/Quiz" element={<QuestionPage />} />
         </Routes>
         <Footer />
       </Router>

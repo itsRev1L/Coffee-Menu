@@ -10,8 +10,10 @@
   z-index: 1000;
   padding: 8px 0;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+
+  height: 90px;
 }
-/*TODO: add a dynamic color toggle for paragraphs too(JUST LIKE THE ICONS) */
+
 p {
   color: #f7f7f7;
 }
