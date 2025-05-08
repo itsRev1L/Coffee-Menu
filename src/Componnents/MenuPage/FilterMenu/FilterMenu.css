@@ -9,10 +9,10 @@
 
 .sticky-menu {
   position: fixed;
-  top: 60px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
+  width: 100%;
   max-width: 600px;
   z-index: 1000;
 }
@@ -24,40 +24,32 @@
   padding: 10px 0;
   white-space: nowrap;
 }
-.sticky-menu {
-  position: fixed;
-  top: 0;
 
-  width: 100%;
-  z-index: 1000;
-}
 .food-option {
   margin: 0 10px;
   flex-shrink: 0;
 }
-
 .food-option button {
   font-size: 14px;
-
-  padding: 8px 10px;
-  border-radius: 15px;
-  border: none;
-  color: #fff !important;
-  background: transparent !important;
-  border: 2px solid #ff5733 !important;
+  padding: 6px 14px;
+  min-width: 60px;
+  border-radius: 9999px;
+  border: 2px solid #ff5733;
+  background: transparent;
+  color: #fff;
   transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
 }
 
 .food-option button:hover,
 .food-option button:focus,
 .food-option button:active {
-  background: linear-gradient(to right, #ff5733, #f39e60) !important;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-  color: white !important;
-  border-color: transparent !important;
-}
-
-.food-option button:focus {
-  outline: none !important;
-  box-shadow: none !important;
+  background: linear-gradient(to right, #ff5733, #f39e60);
+  color: white;
+  border-color: transparent;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
