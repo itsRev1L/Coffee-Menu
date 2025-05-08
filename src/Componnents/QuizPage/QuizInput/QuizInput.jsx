@@ -4,7 +4,7 @@ import { Container, Col, Row } from "react-bootstrap";
 
 const QuestionPageInput = () => {
   return (
-    <Container className="mt-2 rtl">
+    <Container className="mt-2 rtl" style={{ paddingBottom: "100px" }}>
       <Row>
         <Col xs={12}>
           <form className="answer-form">

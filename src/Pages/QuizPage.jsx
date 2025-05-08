@@ -1,14 +1,16 @@
 import React from "react";
-import QuestionPageStats from "../Componnents/QuizPage/QuizStats/QuizStats";
-import QuestionPagePuzzle from "../Componnents/QuizPage/QuizPuzzle/QuizPuzzle";
-import QuestionPageInput from "../Componnents/QuizPage/QuizInput/QuizInput";
+import QuizStats from "../Componnents/QuizPage/QuizStats/QuizStats";
+import QuizPuzzle from "../Componnents/QuizPage/QuizPuzzle/QuizPuzzle";
+import QuizInput from "../Componnents/QuizPage/QuizInput/QuizInput";
 
 const questions = [
   {
     id: 1,
-    question: "What has keys but can’t pick locks? ",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Bumpkey.jpg",
-    hint: "Piano frequency",
+    question:
+      "چه نوع قهوه‌ای از اسپرسو و شیر بخار داده شده تشکیل شده است و طعمی نرم و خامه‌ای دارد؟",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/b/b8/Cappuccino_milk_froth.jpg",
+    hint: "شیر بخار",
     score: 100,
   },
   {
@@ -23,14 +25,14 @@ const questions = [
 const QuestionPage = () => {
   return (
     <>
-      <QuestionPageStats />
-      <QuestionPagePuzzle
+      <QuizStats />
+      <QuizPuzzle
         question={questions[0].question}
         image={questions[0].image}
         hint={questions[0].hint}
         score={questions[0].score}
       />
-      <QuestionPageInput />
+      <QuizInput />
     </>
   );
 };
