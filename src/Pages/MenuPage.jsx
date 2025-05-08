@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Header from "../Componnents/MenuPage/Header/Header.jsx";
+
 import FilterMenu from "../Componnents/MenuPage/FilterMenu/FilterMenu.jsx";
 import MenuList from "../Componnents/MenuPage/MenuList/MenuList.jsx";
 
@@ -108,7 +108,6 @@ function MenuPage() {
 
   return (
     <>
-      <Header />
       <FilterMenu
         foodData={foodData}
         setSelectedCategory={setSelectedCategory}
