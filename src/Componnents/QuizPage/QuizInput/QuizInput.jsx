@@ -1,5 +1,5 @@
 import React from "react";
-import "./QuestionPageInput.css";
+import "./QuizInput.css";
 import { Container, Col, Row } from "react-bootstrap";
 
 const QuestionPageInput = () => {

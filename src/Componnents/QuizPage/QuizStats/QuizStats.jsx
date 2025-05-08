@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./QuestionPageStats.css";
+import "./QuizStats.css";
 
 const QuestionPageStats = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import QuestionPageStats from "../Componnents/QuestionPage/QuestionPageStats/QuestionPageStats";
-import QuestionPagePuzzle from "../Componnents/QuestionPage/QuestionPagePuzzle/QuestionPagePuzzle";
-import QuestionPageInput from "../Componnents/QuestionPage/QuestionPageInput/QuestionPageInput";
+import QuestionPageStats from "../Componnents/QuizPage/QuizStats/QuizStats";
+import QuestionPagePuzzle from "../Componnents/QuizPage/QuizPuzzle/QuizPuzzle";
+import QuestionPageInput from "../Componnents/QuizPage/QuizInput/QuizInput";
 
 const questions = [
   {
