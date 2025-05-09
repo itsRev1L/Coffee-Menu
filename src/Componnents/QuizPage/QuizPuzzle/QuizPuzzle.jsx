@@ -11,7 +11,7 @@ const QuestionPagePuzzle = ({ question, image, hint, score }) => {
         <Col xs={12} sm={12} className="mb-2">
           <div className="question-card">
             <span>
-              {question} ({score} امتیاز)
+              سوال: {question} ({score} امتیاز)
             </span>
           </div>
         </Col>
@@ -24,7 +24,7 @@ const QuestionPagePuzzle = ({ question, image, hint, score }) => {
 
         <Col xs={12} sm={12}>
           <div className="guide-card">
-            <span>{hint}</span>
+            <span> راهنما: {hint}</span>
           </div>
         </Col>
       </Row>

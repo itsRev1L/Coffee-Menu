@@ -53,14 +53,14 @@ const Footer = () => {
         </Col>
         <Col
           xs={3}
-          className={activepath === "/LoginPage" ? "footer-active" : ""}
+          className={activepath === "/Login" ? "footer-active" : ""}
           onClick={() => {
-            navigate("/LoginPage");
+            navigate("/Login");
           }}
         >
           <UserRound
             size={30}
-            color={activepath === "/LoginPage" ? "#ff5733" : "white"}
+            color={activepath === "/Login" ? "#ff5733" : "white"}
           />
           <p>اکانت</p>
         </Col>

@@ -8,6 +8,9 @@
 * {
   font-family: "vazir", sans-serif;
 }
+.rtl {
+  direction: rtl;
+}
 
 body,
 html {

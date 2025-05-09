@@ -13,7 +13,7 @@ const Header = () => {
     "/MenuPage": "منو",
     "/Quiz": "کوییز",
     "/CartPage": "سبد خرید",
-    "/LoginPage": "اکانت",
+    "/Login": "اکانت",
   };
   const pageTitle = pageTitles[ActivePath];
 
