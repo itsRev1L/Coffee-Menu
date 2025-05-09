@@ -8,8 +8,10 @@ const LoginPage = () => {
     <Container className="login-container rtl">
       <Row className="justify-content-center">
         <Col md={12} lg={5} xs={12}>
-          <h2 className="login-title text-center my-4">ورود به حساب کاربری</h2>
           <form className="login-form-box p-4 shadow rounded">
+            <h2 className="login-title text-center my-4">
+              ورود به حساب کاربری
+            </h2>
             <div className="mb-3">
               <input
                 type="email"

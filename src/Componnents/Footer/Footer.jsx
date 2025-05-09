@@ -17,14 +17,14 @@ const Footer = () => {
       >
         <Col
           xs={3}
-          className={activepath === "/CartPage" ? "footer-active" : ""}
+          className={activepath === "/Cart" ? "footer-active" : ""}
           onClick={() => {
-            navigate("/CartPage");
+            navigate("/Cart");
           }}
         >
           <ShoppingCart
             size={30}
-            color={activepath === "/CartPage" ? "#ff5733" : "white"}
+            color={activepath === "/Cart" ? "#ff5733" : "white"}
           />
           <p>سبد خرید</p>
         </Col>

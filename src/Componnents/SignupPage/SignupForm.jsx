@@ -7,10 +7,10 @@ const SignupForm = () => {
     <Container className="login-container rtl">
       <Row className="justify-content-center">
         <Col md={12} lg={5} xs={12}>
-          <h2 className="login-title text-center my-4">
-            اطلاعات زیر را وارد کنید
-          </h2>
           <form className="login-form-box p-4 shadow rounded">
+            <h2 className="login-title text-center my-4">
+              اطلاعات زیر را وارد کنید
+            </h2>
             <Row className="mb-3">
               <Col>
                 <input
