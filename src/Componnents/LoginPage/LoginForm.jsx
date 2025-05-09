@@ -1,5 +1,6 @@
 import React from "react";
 import "./LoginForm.css";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
 const LoginPage = () => {
@@ -26,18 +27,18 @@ const LoginPage = () => {
               />
             </div>
             <div className="d-flex justify-content-between mb-3">
-              <a href="/forgot-password" className="login-link">
+              <Link to="/ForgotPassword" className="login-link">
                 رمز عبور را فراموش کرده‌اید؟
-              </a>
+              </Link>
             </div>
             <button type="submit" className="login-button btn w-100 mt-3">
               ورود
             </button>
             <div className="text-center mt-3 mt-5">
               <span>حساب کاربری ندارید؟ </span>
-              <a href="/signup" className="login-link">
+              <Link to="/Signup" className="login-link">
                 ثبت‌نام کنید
-              </a>
+              </Link>
             </div>
           </form>
         </Col>

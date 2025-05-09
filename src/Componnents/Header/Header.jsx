@@ -14,6 +14,7 @@ const Header = () => {
     "/Quiz": "کوییز",
     "/CartPage": "سبد خرید",
     "/Login": "اکانت",
+    "/Signup": "ثبت نام",
   };
   const pageTitle = pageTitles[ActivePath];
 
