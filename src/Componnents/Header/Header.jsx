@@ -16,7 +16,7 @@ const Header = () => {
     "/Login": "اکانت",
     "/Signup": "ثبت نام",
   };
-  const pageTitle = pageTitles[ActivePath];
+  const pageTitle = pageTitles[ActivePath] || "صفحه پیدا نشد";
 
   return (
     <>

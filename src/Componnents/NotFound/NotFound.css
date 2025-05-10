@@ -1,0 +1,40 @@
+.notfound-container {
+  text-align: center;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-icon {
+  margin-bottom: 20px;
+}
+
+.notfound-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.notfound-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.notfound-button {
+  padding: 10px 24px;
+  background-color: #ef9622;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notfound-button:hover {
+  background-color: #e65c50;
+}

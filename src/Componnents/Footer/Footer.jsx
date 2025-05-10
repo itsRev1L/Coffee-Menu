@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { UserRound, Menu, Shapes, ShoppingCart } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
