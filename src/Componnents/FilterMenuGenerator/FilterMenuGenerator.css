@@ -1,0 +1,38 @@
+.food-option {
+  padding: 0px;
+  margin: 5px, 0px, 0px;
+  flex-shrink: 0;
+}
+.food-option button {
+  font-size: 14px;
+  padding: 6px 14px;
+  min-width: 60px;
+  border-radius: 9999px;
+  border: 2px solid #ff5733;
+  background: transparent;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.food-option button:hover,
+.food-option button:focus,
+.food-option button:active {
+  background: linear-gradient(to right, #ff5733, #f39e60);
+  color: white;
+  border-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.food-option-wrapper {
+  background-color: #373737;
+  border-radius: 20px;
+  padding: 6px 5px;
+  margin: 10px 0px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
