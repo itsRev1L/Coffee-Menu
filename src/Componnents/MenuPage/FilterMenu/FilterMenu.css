@@ -1,17 +1,47 @@
-.sticky-menu {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 600px;
-  z-index: 1000;
+.food-option-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #373737;
+  border-radius: 20px;
+  padding: 6px 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .food-filter-container {
   display: flex;
   overflow-x: auto;
-  flex-direction: row-reverse;
-  padding: 10px 0;
   white-space: nowrap;
+  gap: 6px;
+  flex: 1;
+  padding: 5px 0;
+  margin-left: 10px;
+  scrollbar-width: none;
+}
+
+.food-option {
+  flex-shrink: 0;
+}
+
+.food-option button {
+  font-size: 14px;
+  padding: 6px 14px;
+  min-width: 60px;
+  border-radius: 9999px;
+  border: 2px solid #ff5733;
+  background: transparent;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.food-option button:hover,
+.food-option button:focus,
+.food-option button:active {
+  background: linear-gradient(to right, #ff5733, #f39e60);
+  color: white;
+  border-color: transparent;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }

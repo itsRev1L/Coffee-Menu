@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect, useRef } from "react";
 import "./FilterMenu.css";
-import { Container, Row, Col } from "react-bootstrap";
-import FilterMenuGenerator from "../../FilterMenuGenerator/FilterMenuGenerator";
-import FilterMenuSearch from "../../FilterMenuSearch/FilterMenuSearch";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { Search } from "lucide-react";
 
 const FilterMenu = ({ foodData, setSelectedCategory, selectedCategory }) => {
   const [isSticky, setIsSticky] = useState(false);
@@ -29,14 +28,29 @@ const FilterMenu = ({ foodData, setSelectedCategory, selectedCategory }) => {
       className={isSticky ? "sticky-menu" : ""}
       style={{ paddingBottom: "20px" }}
     >
-      <Row className="food-option-wrapper">
-        <Col className="food-filter-container">
-          <FilterMenuGenerator
-            foodData={foodData}
-            setSelectedCategory={setSelectedCategory}
-            selectedCategory={selectedCategory}
-          />
-          <FilterMenuSearch />
+      <Row className="d-flex align-items-center">
+        <Col>
+          <div className="food-option-wrapper">
+            <div>
+              <Search color="White" size={30} strokeWidth={2.5} />
+            </div>
+            <div className="food-filter-container">
+              {foodData.map((food) => (
+                <div key={food.id} className="food-option">
+                  <Button
+                    variant={
+                      selectedCategory === food.name
+                        ? "warning"
+                        : "outline-warning"
+                    }
+                    onClick={() => setSelectedCategory(food.name)}
+                  >
+                    {food.name}
+                  </Button>
+                </div>
+              ))}
+            </div>
+          </div>
         </Col>
       </Row>
     </Container>
