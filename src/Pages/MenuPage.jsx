@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-
 import FilterMenu from "../Componnents/MenuPage/FilterMenu/FilterMenu.jsx";
 import MenuList from "../Componnents/MenuPage/MenuList/MenuList.jsx";
 
-function MenuPage() {
+function MenuPage({ addToCart, cartItems, removeFromCart }) {
   const foodData = [
     { id: 1, name: "پیتزا" },
     { id: 2, name: "برگر" },
@@ -94,17 +93,11 @@ function MenuPage() {
     a.category.localeCompare(b.category)
   );
 
-  const scrollToCategory = (category) => {
-    if (category === "همه") return;
-
-    const categoryElement = document.getElementById(`category-${category}`);
-    if (categoryElement) {
-      categoryElement.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
   useEffect(() => {
-    scrollToCategory(selectedCategory);
+    if (selectedCategory) {
+      const el = document.getElementById(`category-${selectedCategory}`);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
   }, [selectedCategory]);
 
   return (
@@ -116,7 +109,14 @@ function MenuPage() {
         searchText={searchText}
         setSearchText={setSearchText}
       />
-      <MenuList foodData={sortedMenuItems} searchText={searchText} />
+
+      <MenuList
+        items={sortedMenuItems}
+        searchText={searchText}
+        addToCart={addToCart}
+        cartItems={cartItems}
+        removeFromCart={removeFromCart}
+      />
     </>
   );
 }
