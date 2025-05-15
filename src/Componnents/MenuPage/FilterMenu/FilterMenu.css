@@ -10,6 +10,7 @@
 }
 
 .food-filter-container {
+  direction: rtl;
   display: flex;
   overflow-x: auto;
   white-space: nowrap;

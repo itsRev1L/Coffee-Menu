@@ -24,6 +24,7 @@ const FilterMenu = ({ foodData, setSelectedCategory, selectedCategory }) => {
 
   return (
     <Container
+      fluid
       ref={menuRef}
       className={isSticky ? "sticky-menu" : ""}
       style={{ paddingBottom: "10px" }}
