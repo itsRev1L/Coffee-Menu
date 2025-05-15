@@ -10,7 +10,6 @@ function MenuPage() {
     { id: 3, name: "پاستا" },
     { id: 4, name: "سوشی" },
     { id: 5, name: "دسر" },
-    { id: 6, name: "خوراک" },
   ];
 
   const menuItems = [

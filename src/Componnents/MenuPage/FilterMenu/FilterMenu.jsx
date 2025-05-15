@@ -26,13 +26,13 @@ const FilterMenu = ({ foodData, setSelectedCategory, selectedCategory }) => {
     <Container
       ref={menuRef}
       className={isSticky ? "sticky-menu" : ""}
-      style={{ paddingBottom: "20px" }}
+      style={{ paddingBottom: "10px" }}
     >
       <Row className="d-flex align-items-center">
         <Col>
           <div className="food-option-wrapper">
             <div>
-              <Search color="White" size={30} strokeWidth={2.5} />
+              <Search color="White" size={30} strokeWidth={2} />
             </div>
             <div className="food-filter-container">
               {foodData.map((food) => (

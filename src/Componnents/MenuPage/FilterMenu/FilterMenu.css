@@ -19,6 +19,12 @@
   margin-left: 10px;
   scrollbar-width: none;
 }
+.sticky-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
 
 .food-option {
   flex-shrink: 0;
@@ -41,7 +47,7 @@
 .food-option button:active {
   background: linear-gradient(to right, #ff5733, #f39e60);
   color: white;
-  border-color: transparent;
+  border: none;
   outline: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 6px 15px rgba(0, 0, 0, 0.19);
 }
