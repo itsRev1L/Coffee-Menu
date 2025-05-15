@@ -38,7 +38,9 @@ const MenuList = ({
                     <div className="price">{item.price}</div>
                     <button
                       className={`btn btn-sm ${
-                        isInCart(item.id) ? "btn-danger" : "btn-success"
+                        isInCart(item.id)
+                          ? "menu-button-remove"
+                          : "menu-button-add"
                       }`}
                       onClick={() =>
                         isInCart(item.id)

@@ -14,7 +14,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
                   {item.price}
                 </div>
                 <button
-                  className="btn btn-sm btn-danger"
+                  className="btn btn-sm menu-button-remove"
                   onClick={() => removeFromCart(item.id)}
                   style={{ width: "100px" }}
                 >
