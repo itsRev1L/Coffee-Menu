@@ -87,7 +87,8 @@ function MenuPage() {
     },
   ];
 
-  const [selectedCategory, setSelectedCategory] = useState("همه");
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [searchText, setSearchText] = useState("");
 
   const sortedMenuItems = [...menuItems].sort((a, b) =>
     a.category.localeCompare(b.category)
@@ -112,8 +113,10 @@ function MenuPage() {
         foodData={foodData}
         setSelectedCategory={setSelectedCategory}
         selectedCategory={selectedCategory}
+        searchText={searchText}
+        setSearchText={setSearchText}
       />
-      <MenuList items={sortedMenuItems} />
+      <MenuList foodData={sortedMenuItems} searchText={searchText} />
     </>
   );
 }

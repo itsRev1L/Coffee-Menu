@@ -1,14 +1,18 @@
 /* eslint-disable react/prop-types */
 import "./MenuList.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
+const MenuList = ({ foodData, searchText }) => {
+  const filteredFoods = foodData.filter((food) =>
+    food.name.toLowerCase().includes(searchText.toLowerCase())
+  );
 
-const MenuList = ({ items }) => {
   return (
     <Container style={{ paddingBottom: "90px" }}>
       <Row className="rtl">
-        {items.map((item, index) => (
+        {filteredFoods.map((item, index) => (
           <Col key={item.id} md={12} xs={12}>
-            {index === 0 || items[index - 1].category !== item.category ? (
+            {index === 0 ||
+            filteredFoods[index - 1].category !== item.category ? (
               <h2 id={`category-${item.category}`} className="category-header">
                 {item.category}
               </h2>

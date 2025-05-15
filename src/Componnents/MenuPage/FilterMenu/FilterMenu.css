@@ -52,3 +52,37 @@
   outline: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 6px 15px rgba(0, 0, 0, 0.19);
 }
+
+.search-input {
+  width: 100px;
+
+  opacity: 0;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  direction: rtl;
+  box-shadow: none;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.search-input::placeholder {
+  color: #ccc;
+}
+
+.search-input.show {
+  width: 100%;
+  opacity: 1;
+}
+.search-input:focus,
+.search-input:hover,
+.search-input:active {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: white;
+}
